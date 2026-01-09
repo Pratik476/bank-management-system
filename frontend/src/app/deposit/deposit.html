@@ -1,0 +1,43 @@
+<div class="deposit-container">
+  <h2>💰 Deposit Amount</h2>
+
+ 
+  <div *ngIf="successMessage" 
+       class="msg" 
+       [class.success]="isSuccess" 
+       [class.error]="!isSuccess">
+    {{ successMessage }}
+  </div>
+
+  <form (ngSubmit)="submitDeposit()" #depositForm="ngForm">
+    
+   
+    <div class="form-group">
+      <label>Account ID</label>
+      <input type="text" [value]="accountId" disabled />
+    </div>
+
+   
+    <div class="form-group">
+      <label>Deposit Amount (₹)</label>
+      <input
+        type="number"
+        name="amount"
+        [(ngModel)]="amount"
+        placeholder="Enter amount"
+      />
+    </div>
+
+   
+    <div class="btn-group">
+      <button type="submit" class="btn-submit">
+        Deposit
+      </button>
+
+      <button type="button" class="btn-cancel" (click)="goBack()">
+        Cancel
+      </button>
+    </div>
+
+  </form>
+</div>

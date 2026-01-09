@@ -1,0 +1,40 @@
+<div class="deposit-container">
+  <h2>💸 Withdraw Amount</h2>
+
+  <div *ngIf="successMessage"
+       class="msg"
+       [class.success]="isSuccess"
+       [class.error]="!isSuccess">
+    {{ successMessage }}
+  </div>
+
+  <form (ngSubmit)="submitWithdraw()" #withdrawForm="ngForm">
+
+    <div class="form-group">
+      <label>Account ID</label>
+      <input type="text" [value]="accountId" disabled />
+    </div>
+
+    <div class="form-group">
+      <label>Withdraw Amount (₹)</label>
+      <input
+        type="number"
+        name="amount"
+        [(ngModel)]="amount"
+        placeholder="Enter amount"
+        required
+      />
+    </div>
+
+    <div class="btn-group">
+      <button type="submit" class="btn-submit withdraw">
+        Withdraw
+      </button>
+
+      <button type="button" class="btn-cancel" (click)="goBack()">
+        Cancel
+      </button>
+    </div>
+
+  </form>
+</div>

@@ -1,0 +1,180 @@
+/* =========================
+   PAGE CONTAINER
+========================= */
+.table-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* =========================
+   TITLE
+========================= */
+.table-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #1f2d3d;
+  font-weight: 700;
+}
+
+/* =========================
+   TABLE
+========================= */
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* =========================
+   TABLE HEADER
+========================= */
+.account-table thead {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.account-table th {
+  padding: 16px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* =========================
+   TABLE BODY
+========================= */
+.account-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 14px;
+  color: #333;
+}
+
+.account-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* =========================
+   BALANCE
+========================= */
+.balance {
+  font-weight: 700;
+  color: #1e8449;
+}
+
+/* =========================
+   ACTION COLUMN
+========================= */
+.action-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   COMMON BUTTON STYLE
+========================= */
+.btn-deposit,
+.btn-withdraw,
+.btn-delete,
+.btn-view {
+  width: 120px;
+  height: 42px;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  color: #ffffff;
+
+  transition: all 0.25s ease;
+}
+
+/* =========================
+   DEPOSIT – EMERALD GREEN
+========================= */
+.btn-deposit {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.btn-deposit:hover {
+  background: linear-gradient(135deg, #27ae60, #1e8449);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   WITHDRAW – DEEP ORANGE
+========================= */
+.btn-withdraw {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.btn-withdraw:hover {
+  background: linear-gradient(135deg, #e67e22, #d35400);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   DELETE – DARK GREY → RED
+========================= */
+.btn-delete {
+  background: linear-gradient(135deg, #636e72, #2d3436);
+}
+
+.btn-delete:hover {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   VIEW – ROYAL PURPLE
+========================= */
+.btn-view {
+  background: linear-gradient(135deg, #8e44ad, #6c3483);
+}
+
+.btn-view:hover {
+  background: linear-gradient(135deg, #6c3483, #512e5f);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   CLICK EFFECT
+========================= */
+.btn-deposit:active,
+.btn-withdraw:active,
+.btn-delete:active,
+.btn-view:active {
+  transform: scale(0.94);
+}
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+@media (max-width: 768px) {
+  .action-cell {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-deposit,
+  .btn-withdraw,
+  .btn-delete,
+  .btn-view {
+    width: 100%;
+  }
+}
