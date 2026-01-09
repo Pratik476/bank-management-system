@@ -1,2 +1,27 @@
-# bank-management-system
-Bank Management System is a full-stack web application built using Angular and Spring Boot. It allows users to create and manage bank accounts, view account details, deposit and withdraw money, and delete accounts. The system follows REST API architecture and provides a clean, user-friendly interface for efficient banking operations.
+# Bank Management System – Frontend
+
+This is the frontend application of the **Bank Management System**, developed using **Angular**.  
+It provides a modern and user-friendly interface to manage bank accounts and perform basic banking operations.
+
+## ✨ Features
+- View all bank accounts
+- Create new account
+- View account details
+- Deposit money
+- Withdraw money
+- Delete account
+- Clean and responsive UI
+
+## 🛠️ Tech Stack
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+- RxJS
+- Angular Router
+
+## ▶️ Run Frontend Locally
+
+1. Go to frontend folder
+   ```bash
+   cd frontend
