@@ -1,27 +1,72 @@
-# Bank Management System – Frontend
+# 🏦 Bank Management System
 
-This is the frontend application of the **Bank Management System**, developed using **Angular**.  
-It provides a modern and user-friendly interface to manage bank accounts and perform basic banking operations.
+A full-stack **Bank Management System** developed using **Angular** for the frontend and **Spring Boot** for the backend.  
+This application provides core banking features such as account creation, deposits, withdrawals, and account management through a clean and responsive UI.
 
-## ✨ Features
-- View all bank accounts
-- Create new account
-- View account details
-- Deposit money
-- Withdraw money
-- Delete account
-- Clean and responsive UI
+---
+
+## 🚀 Features
+- Create new bank accounts  
+- View all accounts  
+- View account details  
+- Deposit money  
+- Withdraw money  
+- Delete account  
+- RESTful API integration  
+
+---
 
 ## 🛠️ Tech Stack
-- Angular
-- TypeScript
-- HTML5
-- CSS3
-- RxJS
-- Angular Router
 
-## ▶️ Run Frontend Locally
+### Frontend
+- Angular  
+- TypeScript  
+- HTML5  
+- CSS3  
 
-1. Go to frontend folder
+### Backend
+- Java  
+- Spring Boot  
+- Spring Data JPA  
+
+### Database
+- MySQL  
+
+---
+
+
+---
+
+## 📸 Screenshots
+
+### Account List
+![Account List](images/Account-list.png)
+
+### Create Account
+![Create Account](images/Create-Account.png)
+
+### Deposit Money
+![Deposit](images/Deposit.png)
+
+### Withdraw Money
+![Withdraw](images/withdraw.png)
+
+### View Account Details
+![View Account](images/View-Account.png)
+
+---
+
+## ⚙️ How to Run the Project
+
+### Backend (Spring Boot)
+1. Open backend project in IDE  
+2. Configure database in `application.properties`  
+3. Run the Spring Boot application  
+
+### Frontend (Angular)
+1. Navigate to `frontend` folder  
+2. Install dependencies  
    ```bash
-   cd frontend
+   npm install
+
+
